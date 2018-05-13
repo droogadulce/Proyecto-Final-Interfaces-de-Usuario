@@ -26,10 +26,10 @@ import org.springframework.web.servlet.ModelAndView;
  
 @Controller
 public class Controlador {
-    
+    /*DESDE AQUI PUEDEN HACER PRUEBAS CON SUS VISTAS*/
      @RequestMapping(value="/", method = RequestMethod.GET)
     public String usuario(ModelMap model){
-        return "inicio"; 
+        return "ubicacion"; 
     
     }
      @RequestMapping(value="/registro", method = RequestMethod.GET)
