@@ -22,16 +22,16 @@
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
         <script type="text/javascript">
-          $('.carousel').carousel({
-            interval: 2000
-          });
+            $('.carousel').carousel({
+                interval: 2000
+            });
         </script>
 
     </head>
 
     <body>
         <!-- Navigation -->
-        
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,32 +41,32 @@
                 <a class="navbar-brand" href="#">Visitas CCU</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" >Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/inicio">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >Nosotros</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >Reservaciones</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/reservaciones">Reservaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >Promociones</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/promociones">Promociones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >Ubicación</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/ubicacion">Ubicación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >Contacto</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
-                <form action="${pageContext.request.contextPath}/registro"   class="form-signin">
+            <form action="${pageContext.request.contextPath}/registro"   class="form-signin">
                 <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Registrarse</button>
-                 </form>
-                     <form action="${pageContext.request.contextPath}/login" method="POST" class="login-form">
+            </form>
+            <form action="${pageContext.request.contextPath}/login" method="POST" class="login-form">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-                 </form>
-           
+            </form>
+
 
         </nav>
 
@@ -298,8 +298,8 @@
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-         </form>
-    </body>
+    </form>
+</body>
 
 </html>
 

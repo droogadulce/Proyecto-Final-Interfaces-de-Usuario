@@ -29,9 +29,74 @@ public class Controlador {
     /*DESDE AQUI PUEDEN HACER PRUEBAS CON SUS VISTAS*/
      @RequestMapping(value="/", method = RequestMethod.GET)
     public String usuario(ModelMap model){
-        return "ubicacion"; 
+        return "inicio"; 
     
     }
+    
+    /**
+     * Vista inicio.
+     * @param model
+     * @return 
+     */
+     @RequestMapping(value="/inicio", method = RequestMethod.GET)
+    public String inicio(ModelMap model){
+        return "inicio"; 
+    }
+    
+    /**
+     * Vista nosotros.
+     * @param model
+     * @return 
+     */
+     @RequestMapping(value="/nosotros", method = RequestMethod.GET)
+    public String nosotros(ModelMap model){
+        return "nosotros"; 
+    }
+    
+    /**
+     * Vista reservaciones.
+     * @param model
+     * @return 
+     */
+    @RequestMapping(value="/reservaciones", method = RequestMethod.GET)
+    public String reservaciones(ModelMap model){
+        return "reservaciones"; 
+    }
+    
+    /**
+     * Vista promociones.
+     * @param model
+     * @return 
+     */
+    @RequestMapping(value="/promociones", method = RequestMethod.GET)
+    public String promociones(ModelMap model){
+        return "promociones"; 
+    }
+    
+    /**
+     * Vista ubicación.
+     * @param model
+     * @return 
+     */
+    @RequestMapping(value="/ubicacion", method = RequestMethod.GET)
+    public String ubicacion(ModelMap model){
+        return "ubicacion"; 
+    }
+    
+    /**
+     * Vista contacto.
+     * @param model
+     * @return 
+     */
+    @RequestMapping(value="/contacto", method = RequestMethod.GET)
+    public String contacto(ModelMap model){
+        return "contacto"; 
+    }
+    
+    /**
+     * Vista registro.
+     * @return 
+     */
      @RequestMapping(value="/registro", method = RequestMethod.GET)
     public String registroGET(){
         return "register";
