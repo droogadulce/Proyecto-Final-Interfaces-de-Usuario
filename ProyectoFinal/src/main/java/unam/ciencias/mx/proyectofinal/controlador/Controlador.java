@@ -22,16 +22,17 @@ import org.springframework.web.servlet.ModelAndView;
 /**
  *
  * @author hectorsama
- 
+ */
 @Controller
 public class Controlador {
     
      @RequestMapping(value="/", method = RequestMethod.GET)
     public String usuario(ModelMap model){
-        return "profile"; 
+        return "inicio"; 
     
     }
-     */
+}
+     
     
     
      /*Injectamos el modelo del usuario se autoinicializa*/
@@ -41,7 +42,7 @@ public class Controlador {
      * @param model 
      * @return regresa el modelo 
      */
-@Controller
+/*@Controller
 public class Controlador {
      @Autowired
     private UsuarioDAO usuario_bd;
@@ -98,4 +99,4 @@ public class Controlador {
 
   
    
-}
+}*/
