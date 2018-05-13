@@ -32,6 +32,10 @@ public class Controlador {
         return "inicio"; 
     
     }
+     @RequestMapping(value="/registro", method = RequestMethod.GET)
+    public String registroGET(){
+        return "register";
+}
 }
      
     

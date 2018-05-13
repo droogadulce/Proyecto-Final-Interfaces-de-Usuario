@@ -28,7 +28,7 @@
             <div class="row main">
                 <div class="main-login main-center">
                     <h5>Registrarse</h5>
-                    
+                      <form action="${pageContext.request.contextPath}/registrar" method="POST">       
                         <!--<form class="" method="post" action="#">-->
 
                         <div class="form-group">
@@ -125,6 +125,6 @@
                 </div>
             </div>
         </div>
-
+    </form>
     </body>
 </html>

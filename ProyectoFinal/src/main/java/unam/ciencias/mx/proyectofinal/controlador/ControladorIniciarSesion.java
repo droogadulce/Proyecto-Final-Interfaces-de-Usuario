@@ -34,7 +34,7 @@ public class ControladorIniciarSesion {
     @Autowired
     UsuarioDAO Usuario_db;
    
-    @RequestMapping(value = "/registrar")
+    @RequestMapping(value = "/")
     public String inicio(HttpServletRequest request) {
         if (request.isUserInRole("ROLE_ADMIN")) {
             return "redirect:/sesion/inicioU";
