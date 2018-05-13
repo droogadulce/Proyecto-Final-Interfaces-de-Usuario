@@ -59,10 +59,13 @@
                     </li>
                 </ul>
             </div>
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0" action="${pageContext.request.contextPath}/registro">
                 <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Registrarse</button>
+                 </form>
+                 <form class="form-inline my-2 my-lg-0" action="${pageContext.request.contextPath}/registro">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-            </form>
+                 </form>
+           
 
         </nav>
 
