@@ -23,6 +23,7 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * @author hectorsama
  */
+ 
 @Controller
 public class Controlador {
     
@@ -99,4 +100,5 @@ public class Controlador {
 
   
    
-}*/
+}
+*/

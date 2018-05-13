@@ -34,13 +34,13 @@ public class ControladorIniciarSesion {
     @Autowired
     UsuarioDAO Usuario_db;
    
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "/registrar")
     public String inicio(HttpServletRequest request) {
         if (request.isUserInRole("ROLE_ADMIN")) {
             return "redirect:/sesion/inicioU";
         }
 
-        return "inicio";
+        return "register";
     }
 
     @RequestMapping(value = "/login_error")
@@ -62,7 +62,7 @@ public class ControladorIniciarSesion {
         model.addAttribute("correo", usuario.getCorreo());
         model.addAttribute("nombre", usuario.getNombre());
         
-        return new ModelAndView("profile", model);
+        return new ModelAndView("register", model);
 
     }
 }
