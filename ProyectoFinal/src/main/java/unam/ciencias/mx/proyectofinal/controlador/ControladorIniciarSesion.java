@@ -40,7 +40,7 @@ public class ControladorIniciarSesion {
             return "redirect:/sesion/inicioU";
         }
 
-        return "register";
+        return "inicio";
     }
 
     @RequestMapping(value = "/login_error")

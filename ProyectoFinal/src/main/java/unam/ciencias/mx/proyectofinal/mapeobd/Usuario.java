@@ -23,69 +23,42 @@ import javax.xml.bind.annotation.XmlTransient;
  * @author hectorsama
  * @author Alan Moreno de la Rosa
  */
-
 @Entity
-@Table (name="usuario")
+@Table(name = "usuario")
 
 public class Usuario {
-    
- @Id@GeneratedValue(strategy =GenerationType.IDENTITY )
- @Column(name="ID_USUARIO")
- private int ID_USUARIO;
- @Column (name="alias")
- private String alias;
- @Column (name="nombre")
- private String nombre;
- @Column (name="apellido_p")
- private String apellido_p;
- @Column (name="apellido_m")
- private String apellido_m;
- @Column(name="correo")
- private String correo;
- @Column (name="f_reg")
- private Date f_reg;
- @Column(name="sexo")
- private String  sexo;
- @Column(name="edad")
- private String edad;
- @Column (name="contrasenya")
- private String contrasenya;    
-  @Column(name = "rol")
-private String rol;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_usuario")
+    private int id_usuario;
+    @Column(name = "nombre")
+    private String nombre;
+    @Column(name = "apellido")
+    private String apellido;
+    @Column(name = "fecha_nacimiento")
+    private Date fecha_nacimiento;
+    @Column(name = "correo")
+    private String correo;
+    @Column(name = "contrasenia")
+    private String contrasenia;
+    @Column(name = " telefono")
+    private String telefono;
+    @Column(name = "cuenta_valida")
+    private boolean cuenta_valida;
+    @Column(name = "notificaciones")
+    private boolean notificaciones;
+    @Column(name = "idTipoVisitante")
+    private int idTipoVisitante;
+    @Column(name = "rol")
+    private String rol;
 
-    public String getRol() {
-        return rol;
+    public int getId_usuario() {
+        return id_usuario;
     }
 
-    public void setRol(String rol) {
-        this.rol = rol;
-    }
-
-
-    public int getID_USUARIO() {
-        return ID_USUARIO;
-    }
-
-    public void setID_USUARIO(int ID_USUARIO) {
-        this.ID_USUARIO = ID_USUARIO;
-    }
-
-
-    public String getCorreo() {
-        return correo;
-    }
-
-    public void setCorreo(String correo) {
-        this.correo = correo;
-    }
-
-    public String getAlias() {
-        return alias;
-    }
-
-    public void setAlias(String alias) {
-        this.alias = alias;
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
     public String getNombre() {
@@ -96,55 +69,76 @@ private String rol;
         this.nombre = nombre;
     }
 
-    public String getApellido_p() {
-        return apellido_p;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setApellido_p(String apellido_p) {
-        this.apellido_p = apellido_p;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
-    public String getApellido_m() {
-        return apellido_m;
+    public Date getFecha_nacimiento() {
+        return fecha_nacimiento;
     }
 
-    public void setApellido_m(String apellido_m) {
-        this.apellido_m = apellido_m;
+    public void setFecha_nacimiento(Date fecha_nacimiento) {
+        this.fecha_nacimiento = fecha_nacimiento;
     }
 
-    public Date getF_reg() {
-        return f_reg;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setF_reg(Date f_reg) {
-        this.f_reg = f_reg;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public String getSexo() {
-        return sexo;
+    public String getContrasenia() {
+        return contrasenia;
     }
 
-    public void setSexo(String sexo) {
-        this.sexo = sexo;
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
     }
 
-    public String getEdad() {
-        return edad;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setEdad(String edad) {
-        this.edad = edad;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
-    public String getContrasenya() {
-        return contrasenya;
+    public boolean isCuenta_valida() {
+        return cuenta_valida;
     }
 
-    public void setContrasenya(String contrasenya) {
-        this.contrasenya = contrasenya;
+    public void setCuenta_valida(boolean cuenta_valida) {
+        this.cuenta_valida = cuenta_valida;
     }
-    
 
+    public boolean isNotificaciones() {
+        return notificaciones;
+    }
 
- 
+    public void setNotificaciones(boolean notificaciones) {
+        this.notificaciones = notificaciones;
+    }
+
+    public int getIdTipoVisitante() {
+        return idTipoVisitante;
+    }
+
+    public void setIdTipoVisitante(int idTipoVisitante) {
+        this.idTipoVisitante = idTipoVisitante;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
 }

@@ -37,9 +37,9 @@ public class controladorEditarPerfil {
         Usuario us = Usuario_db.getUsuario(usuario);
 
         model.addAttribute("nombre_", us.getNombre());
-        model.addAttribute("paterno", us.getApellido_p());
-        model.addAttribute("materno", us.getApellido_m());
-        model.addAttribute("alias_", us.getAlias());
+       // model.addAttribute("paterno", us.getApellido_p());
+       // model.addAttribute("materno", us.getApellido_m());
+        //model.addAttribute("alias_", us.getAlias());
         return new ModelAndView("editar", model);
 
     }
@@ -62,7 +62,7 @@ public class controladorEditarPerfil {
 
         Usuario us = Usuario_db.getUsuario(usuario);
 
-        if (contrasenya.equals(passwordConf)) {
+      /*  if (contrasenya.equals(passwordConf)) {
             if (name != null) {
                 us.setAlias(name);
             }
@@ -80,7 +80,7 @@ public class controladorEditarPerfil {
             }
         } else {
             return "redirect:/editar";
-        }
+        }*/
 
         Usuario_db.actualizar(us);
 
