@@ -79,24 +79,24 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/bg-masthead.jpg" alt="First slide">
+                    <img class="d-block w-100" src="img/banner2.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>VISITA GUIADA AL CENTRO CULTURAL UNIVERSITARIO</h5>
-                        <p>...</p>
+                        <p>Espacio Escultórico</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/bg-showcase-1.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="img/banner1.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>DATE UN ROL Y CONOCE TU UNIVERSIDAD</h5>
-                        <p>...</p>
+                        <p>Torre de Rectoría</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="img/bg-showcase-2.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="img/banner3.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>ECONOCE TU UNIVERSIDAD</h5>
-                        <p>...</p>
+                        <p>Jardín Botánico</p>
                     </div>
                 </div>
             </div>
@@ -109,43 +109,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
-
-        <!-- Icons Grid -->
-        <section class="features-icons bg-light text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-screen-desktop m-auto text-primary"></i>
-                            </div>
-                            <h3>Fully Responsive</h3>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-layers m-auto text-primary"></i>
-                            </div>
-                            <h3>Bootstrap 4 Ready</h3>
-                            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-check m-auto text-primary"></i>
-                            </div>
-                            <h3>Easy to Use</h3>
-                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
         <!-- Image Showcases -->
         <section class="showcase">
             <div class="container-fluid p-0">
@@ -193,61 +157,11 @@
                 </div>
             </div>
         </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials text-center bg-light">
-            <div class="container">
-                <h2 class="mb-5">What people are saying...</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-                            <h5>Margaret E.</h5>
-                            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-                            <h5>Fred S.</h5>
-                            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-                            <h5>Sarah	W.</h5>
-                            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="jumbotron">
+            <div class="text-center">
+            <p><a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/reservaciones" role="button">¡Has tu reservación!</a></p>
             </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="call-to-action text-white text-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                    </div>
-                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                    <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        </div>
         <!-- Footer -->
         <footer class="footer bg-light">
             <div class="container">
@@ -270,12 +184,12 @@
                                 <a href="#">Privacy Policy</a>
                             </li>
                         </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Centro Cultural Universitario 2018. Todos los derechos reservados.</p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item mr-3">
-                                <a href="#">
+                                <a href="https://www.facebook.com/visitasguiadas.ccuunam/">
                                     <i class="fa fa-facebook fa-2x fa-fw"></i>
                                 </a>
                             </li>
