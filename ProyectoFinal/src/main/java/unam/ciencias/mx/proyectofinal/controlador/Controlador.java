@@ -120,6 +120,13 @@ public class Controlador {
 
     @Autowired
     private UsuarioDAO usuario_bd;
+    
+
+     @RequestMapping(value="/", method = RequestMethod.GET)
+    public String usuario(ModelMap model){
+        return "inicio"; 
+    
+    }
 
     @RequestMapping(value = "/registrar", method = RequestMethod.POST)
     public ModelAndView guardarUsuario(HttpServletRequest request, ModelMap model) throws ParseException {

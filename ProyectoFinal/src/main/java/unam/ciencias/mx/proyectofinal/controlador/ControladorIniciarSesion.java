@@ -5,9 +5,6 @@ package unam.ciencias.mx.proyectofinal.controlador;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
-
 import unam.ciencias.mx.proyectofinal.mapeobd.Usuario;
 //import com.megaflicks.gustosculposos.modelo.GustosCulpososDAO;
 import unam.ciencias.mx.proyectofinal.modelo.UsuarioDAO;
@@ -33,14 +30,14 @@ public class ControladorIniciarSesion {
 
     @Autowired
     UsuarioDAO Usuario_db;
-   
-    @RequestMapping(value = "/")
+
+    @RequestMapping(value = "/sesion")
     public String inicio(HttpServletRequest request) {
         if (request.isUserInRole("ROLE_ADMIN")) {
             return "redirect:/sesion/inicioU";
         }
 
-        return "inicio";
+        return "sesion";
     }
 
     @RequestMapping(value = "/login_error")
@@ -57,15 +54,12 @@ public class ControladorIniciarSesion {
 
         String u = principal.getName();
         Usuario usuario = Usuario_db.getUsuario(u);
-      
+
         model.addAttribute("username", u);
         model.addAttribute("correo", usuario.getCorreo());
         model.addAttribute("nombre", usuario.getNombre());
-        
-        return new ModelAndView("register", model);
+
+        return new ModelAndView("reservaciones", model);
 
     }
 }
-    
-
-    

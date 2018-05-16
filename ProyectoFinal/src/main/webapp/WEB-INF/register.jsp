@@ -80,7 +80,7 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="contrasenia" id="contrasenya"  placeholder="Enter your Password" required/>
+                                    <input type="password" class="form-control" name="contrasenia" id="contrasenia"  placeholder="Enter your Password" required/>
                                 </div>
                             </div>
                         </div>
