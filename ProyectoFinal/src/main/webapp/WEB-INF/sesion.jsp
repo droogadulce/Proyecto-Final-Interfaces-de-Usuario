@@ -22,12 +22,6 @@
         <title>Login</title>
     </head>
     <body>
-        <h1 class="welcome text-center">GustosCulposos<br> Donde lo que te avergüenza, te conecta.</h1>
-        <script>try {
-                    Typekit.load({async: true});
-                } catch (e) {
-                }</script>
-
         <div class="container">
 
             <div class="card card-container">
