@@ -1,19 +1,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-
         <title>Contacto</title>
-
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
         <!-- Custom fonts for this template -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -26,16 +21,13 @@
                 interval: 2000
             });
         </script>
-
     </head>
-
     <body>
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <a class="navbar-brand" href="#">Visitas CCU</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -65,98 +57,35 @@
             <form action="${pageContext.request.contextPath}/login" method="POST" class="login-form">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
             </form>
-
         </nav>
-
-        <!-- Icons Grid -->
-        <section class="features-icons bg-light text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-screen-desktop m-auto text-primary"></i>
-                            </div>
-                            <h3>Fully Responsive</h3>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-layers m-auto text-primary"></i>
-                            </div>
-                            <h3>Bootstrap 4 Ready</h3>
-                            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-check m-auto text-primary"></i>
-                            </div>
-                            <h3>Easy to Use</h3>
-                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Contacto -->
+        <div class="container">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <h3>DATOS DE CONTACTO</h3>
+                <p>Visitas Guiadas al Centro Cultural Universitario y Date un rol y conoce tu Universidad. </p>
+                <h4>Teléfono</h4>
+                <p class="lead mb-0">
+                    <i class="fa fa-phone" style="font-size:30px;"></i>
+                    5622 7008 </p>
+                <br>
+                <p class="lead mb-0">
+                    <b>Jefa del área de Visitas Guiadas al CCU y Date un rol y conoce tu Universidad </b>
+                    <br>
+                    Mtra. Susana Bautista Cruz
+                    <br><i class="fa fa-envelope" style="font-size:30px;"></i>
+                    susanabautista170@hotmail.com
+                </p>
+                <br>
+                <p class="lead mb-0">
+                    <b>Asistente del área</b>
+                    <br>
+                    Lic. Pamela García Maldonado
+                    <br><i class="fa fa-envelope" style="font-size:30px;"></i>
+                    pamela.garcia.maldonado@gmail.com
+                </p>
             </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials text-center bg-light">
-            <div class="container">
-                <h2 class="mb-5">What people are saying...</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-                            <h5>Margaret E.</h5>
-                            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-                            <h5>Fred S.</h5>
-                            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-                            <h5>Sarah W.</h5>
-                            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="call-to-action text-white text-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                    </div>
-                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                    <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            <br>
+        </div>
         <!-- Footer -->
         <footer class="footer bg-light">
             <div class="container">
@@ -203,11 +132,8 @@
                 </div>
             </div>
         </footer>
-
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     </body>
-
 </html>
