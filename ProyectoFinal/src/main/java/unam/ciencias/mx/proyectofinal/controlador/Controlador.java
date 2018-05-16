@@ -35,79 +35,8 @@ public class Controlador {
         return "inicio"; 
     
     }
-
- */
-/**
- * Vista inicio.
- *
- * @param model
- * @return
- */
-/*@RequestMapping(value="/inicio", method = RequestMethod.GET)
-    public String inicio(ModelMap model){
-        return "inicio"; 
-    }
- */
-/**
- * Vista nosotros.
- *
- * @param model
- * @return
- */
-/* @RequestMapping(value="/nosotros", method = RequestMethod.GET)
-    public String nosotros(ModelMap model){
-        return "nosotros"; 
-    }*/
-/**
- * Vista reservaciones.
- *
- * @param model
- * @return
- */
-/*@RequestMapping(value="/reservaciones", method = RequestMethod.GET)
-    public String reservaciones(ModelMap model){
-        return "reservaciones"; 
-    }*/
-/**
- * Vista promociones.
- *
- * @param model
- * @return
- */
-/*@RequestMapping(value="/promociones", method = RequestMethod.GET)
-    public String promociones(ModelMap model){
-        return "promociones"; 
-    }*/
-/**
- * Vista ubicación.
- *
- * @param model
- * @return
- */
-/* @RequestMapping(value="/ubicacion", method = RequestMethod.GET)
-    public String ubicacion(ModelMap model){
-        return "ubicacion"; 
-    }*/
-/**
- * Vista contacto.
- *
- * @param model
- * @return
- */
-/*   @RequestMapping(value="/contacto", method = RequestMethod.GET)
-    public String contacto(ModelMap model){
-        return "contacto"; 
-    }*/
-/**
- * Vista registro.
- *
- * @return
- */
-/* @RequestMapping(value="/registro", method = RequestMethod.GET)
-    public String registroGET(){
-        return "register";
-}
 }*/
+
  /*Injectamos el modelo del usuario se autoinicializa*/
 /**
  * Regresa la pagina principal con los usuarios de la base de datos
@@ -174,6 +103,70 @@ public class Controlador {
     @RequestMapping(value = "/registro", method = RequestMethod.GET)
     public String registroGET() {
         return "register";
+    }
+    
+    /**
+     * Vista inicio.
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/inicio", method = RequestMethod.GET)
+    public String inicio(ModelMap model){
+        return "inicio"; 
+    }
+     
+    /**
+     * Vista nosotros.
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/nosotros", method = RequestMethod.GET)
+    public String nosotros(ModelMap model){
+        return "nosotros"; 
+    }
+    /**
+     * Vista reservaciones.
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/reservaciones", method = RequestMethod.GET)
+    public String reservaciones(ModelMap model){
+        return "reservaciones"; 
+    }
+    
+    /**
+     * Vista promociones.
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/promociones", method = RequestMethod.GET)
+    public String promociones(ModelMap model){
+        return "promociones"; 
+    }
+    
+    /**
+     * Vista ubicación.
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/ubicacion", method = RequestMethod.GET)
+    public String ubicacion(ModelMap model){
+        return "ubicacion"; 
+    }
+    /**
+     * Vista contacto.
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/contacto", method = RequestMethod.GET)
+    public String contacto(ModelMap model){
+        return "contacto"; 
     }
 
 }
