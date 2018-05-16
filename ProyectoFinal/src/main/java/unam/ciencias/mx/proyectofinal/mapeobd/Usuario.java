@@ -36,20 +36,20 @@ public class Usuario {
     private String nombre;
     @Column(name = "apellido")
     private String apellido;
-    @Column(name = "fecha_nacimiento")
-    private Date fecha_nacimiento;
+ //   @Column(name = "fecha_nacimiento")
+    //private Date fecha_nacimiento;
     @Column(name = "correo")
     private String correo;
     @Column(name = "contrasenia")
     private String contrasenia;
     @Column(name = " telefono")
     private String telefono;
-    @Column(name = "cuenta_valida")
-    private boolean cuenta_valida;
-    @Column(name = "notificaciones")
-    private boolean notificaciones;
-    @Column(name = "idTipoVisitante")
-    private int idTipoVisitante;
+  //  @Column(name = "cuenta_valida")
+   // private boolean cuenta_valida;
+    //@Column(name = "notificaciones")
+    //private boolean notificaciones;
+   // @Column(name = "idTipoVisitante")
+   // private int idTipoVisitante;
     @Column(name = "rol")
     private String rol;
 
@@ -77,13 +77,13 @@ public class Usuario {
         this.apellido = apellido;
     }
 
-    public Date getFecha_nacimiento() {
+  /*  public Date getFecha_nacimiento() {
         return fecha_nacimiento;
     }
 
     public void setFecha_nacimiento(Date fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
-    }
+    }*/
 
     public String getCorreo() {
         return correo;
@@ -109,7 +109,7 @@ public class Usuario {
         this.telefono = telefono;
     }
 
-    public boolean isCuenta_valida() {
+    /*public boolean isCuenta_valida() {
         return cuenta_valida;
     }
 
@@ -131,7 +131,7 @@ public class Usuario {
 
     public void setIdTipoVisitante(int idTipoVisitante) {
         this.idTipoVisitante = idTipoVisitante;
-    }
+    }*/
 
     public String getRol() {
         return rol;

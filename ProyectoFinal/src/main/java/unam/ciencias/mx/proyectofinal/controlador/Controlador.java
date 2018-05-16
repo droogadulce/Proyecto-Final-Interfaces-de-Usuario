@@ -129,12 +129,13 @@ public class Controlador {
         //System.out.println(id);
         String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");
-        String fecha_nacimiento = request.getParameter("fecha_nacimiento");
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Date startDate = sdf.parse(fecha_nacimiento);
+        //String fecha_nacimiento = request.getParameter("fecha_nacimiento");
+        //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        //Date startDate = sdf.parse(fecha_nacimiento);
         
         String correo = request.getParameter("correo");
         String contrasenia = request.getParameter("contrasenia");
+        String telefono= request.getParameter("telefono");
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String hashedPassword = passwordEncoder.encode(contrasenia);
         System.out.println(hashedPassword);
@@ -144,17 +145,18 @@ public class Controlador {
             u = new Usuario();
             u.setNombre(nombre);
             u.setApellido(apellido);
-            u.setFecha_nacimiento(startDate);
-             u.setCorreo(correo);
+            //u.setFecha_nacimiento(startDate);
+            u.setCorreo(correo);
+            u.setTelefono(telefono);
             u.setContrasenia(hashedPassword);
             u.setRol("ROLE_ADMIN");
-            u.setNotificaciones(true);
-            u.setIdTipoVisitante(0);
+            //u.setNotificaciones(true);
+            //u.setIdTipoVisitante(0);
 
             usuario_bd.guardar(u);
             model.addAttribute("correo", correo);
             // return "profile";
-            return new ModelAndView("visitas", model);
+            return new ModelAndView("reservaciones", model);
         }
         // ModelMap model = new ModelMap(); 
         //  model.addAttribute("correo", u.getCorreo());

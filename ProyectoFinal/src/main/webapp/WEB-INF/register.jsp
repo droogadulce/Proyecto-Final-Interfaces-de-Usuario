@@ -41,24 +41,14 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Apellidos paterno</label>
+                            <label for="name" class="cols-sm-2 control-label">Apellidos</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="apellido_p" id="apellido_p"  placeholder="Apellido Paterno" required/>
+                                    <input type="text" class="form-control" name="apellido" id="apellido"  placeholder="Apellidos" required/>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Apellidos Materno</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="apellido_m" id="apellido_m"  placeholder="Apellido Materno" required/>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="form-group">
                             <label for="correo" class="cols-sm-2 control-label" >Email</label>
                             <div class="cols-sm-10">
@@ -68,13 +58,12 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="username" class="cols-sm-2 control-label">Alias</label>
+                            <label for="correo" class="cols-sm-2 control-label" >Telefono</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="alias" id="username"  placeholder="Enter your Username" required/>
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="telefono" class="form-control"  name="telefono" id="telefono"  placeholder="Telefono" required/>
                                 </div>
                             </div>
                         </div>
@@ -86,26 +75,15 @@
                             </select>
 
                         </div>
-
-
-
-
-
-
-
-
-
                         <div class="form-group">
-                            <label for="contrasenya" class="cols-sm-2 control-label">Contraseña</label>
+                            <label for="contrasenia" class="cols-sm-2 control-label">Contraseña</label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="contrasenya" id="contrasenya"  placeholder="Enter your Password" required/>
+                                    <input type="password" class="form-control" name="contrasenia" id="contrasenya"  placeholder="Enter your Password" required/>
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="form-group">
                             <label for="confirm" class="cols-sm-2 control-label">Confirmar Contraseña</label>
                             <div class="cols-sm-10">
