@@ -1,23 +1,13 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 16-oct-2017, 15:38:27
-    Author     : hectorsama
-*/
-
  /* The side navigation menu */
 #playground-container {
     height: 500px;
+    width: 200%;
     overflow: hidden !important;
     -webkit-overflow-scrolling: touch;
 }
 body, html{
      height: 100%;
  	background-repeat: no-repeat;
- 	background:url(http://www.fondox.net/descargar.php?id=1573&resolucion=1280x720);
  	font-family: 'Oxygen', sans-serif;
 	    background-size: cover;
 }
@@ -96,18 +86,19 @@ padding: 8px 12px !important;
 .main-center{
  	margin-top: 30px;
  	margin: 0 auto;
- 	max-width: 400px;
-    padding: 10px 40px;
+ 	width: 50%;
+        padding: 10px 40px;
 	background:#009edf;
 	    color: #FFF;
-    text-shadow: none;
+        text-shadow: none;
 	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 
 }
+
 span.input-group-addon i {
-    color: #009edf;
+    color: white;
     font-size: 17px;
 }
 
@@ -120,3 +111,12 @@ span.input-group-addon i {
 	text-align: center;
 }
 
+#header {
+    background-image:url("http://www.elheraldodesaltillo.mx/wp-content/uploads/2015/10/G14081137.jpg");
+}
+
+.h_obs {
+   -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.76px;
+}

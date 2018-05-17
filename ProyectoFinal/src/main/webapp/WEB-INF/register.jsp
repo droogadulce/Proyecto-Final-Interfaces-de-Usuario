@@ -1,39 +1,48 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-
 <html lang="en">
-    <head> 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Archivo jquery local-->
-        <script type="text/javascript" 
-                src="<c:url value="/jquery/jquery-3.2.1.min.js"/>" defer>
-        </script>
-        <!--font-awesome local-->
-        <link rel="stylesheet" href="<c:url value="/css/font-awesome/css/font-awesome.min.css"/>"/>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
         <title>Registro</title>
+
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
         <!-- Custom fonts for this template -->
+        <link href="css/register.css" rel="stylesheet">
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
+        <script type="text/javascript">
+            $('.carousel').carousel({
+                interval: 2000
+            });
+        </script>
+
     </head>
+
     <body>
         <!-- Navigation -->
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <a class="navbar-brand" href="#">Visitas CCU</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/inicio">Inicio</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/inicio">Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/nosotros">Nosotros</a>
@@ -52,74 +61,103 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+            <form action="${pageContext.request.contextPath}/login" method="POST" class="login-form">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
+            </form>
 
+
+        </nav>
+        
+       <!-- Call to Action -->
+        <section class="call-to-action text-white text-center" id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-9 mx-auto">
+                            <h2 class="h_obs">¡Forma parte de la comunidad!</h2>
+                    </div>
+                </div>
+        </section>
+                
         <div class="container">
-            <h2>Registro</h2>
             <div class="row main">
                 <div class="main-login main-center">
-                    
-                    <form action="${pageContext.request.contextPath}/registrar" method="POST">       
+                    <h5>Registro</h5>
+                    <p>Introduce los datos que se solicitan a continuación. </p>
+                      <form action="${pageContext.request.contextPath}/registrar" method="POST">       
                         <!--<form class="" method="post" action="#">-->
 
                         <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Nombre</label>
+                            <label for="name" class="cols-sm-2 control-label">Nombre: </label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="nombre" id="name"  placeholder="Nombre" required/>
+                                    <span class="text-center"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="nombre" id="name"  placeholder="Escribe tu nombre" required/>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Apellidos</label>
+                            <label for="name" class="cols-sm-2 control-label">Apellidos paterno: </label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="apellido" id="apellido"  placeholder="Apellidos" required/>
+                                    <span class="text-center"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="apellido_p" id="apellido_p"  placeholder="Escribe tu apellido paterno" required/>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="correo" class="cols-sm-2 control-label" >Correo</label>
+                            <label for="name" class="cols-sm-2 control-label">Apellidos Materno: </label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="email" class="form-control"  name="correo" id="correo"  placeholder="ejemplo@gmail.com" required/>
+                                    <span class="text-center"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="apellido_m" id="apellido_m"  placeholder="Escribe tu apellido materno" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="correo" class="cols-sm-2 control-label" >Correo electrónico: </label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="text-center"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="email" class="form-control"  name="correo" id="correo"  placeholder="Escribe tu correo electrónico" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username" class="cols-sm-2 control-label">Nombre de usuario: </label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="text-center"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="alias" id="username"  placeholder="Escribe tu nombre de usuario" required/>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="correo" class="cols-sm-2 control-label" >Telefono</label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-                                    <input type="telefono" class="form-control"  name="telefono" id="telefono"  placeholder="Telefono" required/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="sexo">Sexo:</label>
+                            <label for="sexo">Sexo: </label>
                             <select class="form-control" id="sexo" name="sexo">
                                 <option>Femenino</option>
                                 <option>Masculino</option>
                             </select>
 
                         </div>
+
                         <div class="form-group">
-                            <label for="contrasenia" class="cols-sm-2 control-label">Contraseña</label>
+                            <label for="contrasenya" class="cols-sm-2 control-label">Contraseña: </label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="contrasenia" id="contrasenia"  placeholder="Contraseña" required/>
+                                    <span class="text-center"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="contrasenya" id="contrasenya"  placeholder="Escribe tu contraseña" required/>
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="form-group">
-                            <label for="confirm" class="cols-sm-2 control-label">Confirmar Contraseña</label>
+                            <label for="confirm" class="cols-sm-2 control-label">Confirmar Contraseña: </label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <span class="text-center"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
                                     <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirma tu contraseña" required/>
                                 </div>
                             </div>
@@ -128,10 +166,13 @@
                         <div class="form-group ">
                             <button id="button"  class="btn btn-primary btn-lg btn-block login-button">Registrarse</button>
                         </div>
+
+
                     </form>
                 </div>
             </div>
         </div>
+                        
         <!-- Footer -->
         <footer class="footer bg-light">
             <div class="container">
@@ -178,8 +219,6 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                        
     </body>
 </html>
