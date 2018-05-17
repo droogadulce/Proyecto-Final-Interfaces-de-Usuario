@@ -96,23 +96,15 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Apellidos paterno: </label>
+                            <label for="name" class="cols-sm-2 control-label">Apellido paterno: </label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="text-center"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="apellido_p" id="apellido_p"  placeholder="Escribe tu apellido paterno" required/>
+                                    <input type="text" class="form-control" name="apellido" id="apellido"  placeholder="Escribe tu apellido" required/>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="name" class="cols-sm-2 control-label">Apellidos Materno: </label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="text-center"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="apellido_m" id="apellido_m"  placeholder="Escribe tu apellido materno" required/>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                         <div class="form-group">
                             <label for="correo" class="cols-sm-2 control-label" >Correo electrónico: </label>
@@ -123,16 +115,18 @@
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="form-group">
-                            <label for="username" class="cols-sm-2 control-label">Nombre de usuario: </label>
+                            <label for="telefono" class="cols-sm-2 control-label" >Teléfono: </label>
                             <div class="cols-sm-10">
                                 <div class="input-group">
-                                    <span class="text-center"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                                    <input type="text" class="form-control" name="alias" id="username"  placeholder="Escribe tu nombre de usuario" required/>
+                                    <span class="text-center"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+                                    <input type="telefono" class="form-control"  name="telefono" id="telefono"  placeholder="Escribe tu teléfono" required/>
                                 </div>
                             </div>
                         </div>
+
+                        
                         <div class="form-group">
                             <label for="sexo">Sexo: </label>
                             <select class="form-control" id="sexo" name="sexo">
@@ -147,7 +141,7 @@
                             <div class="cols-sm-10">
                                 <div class="input-group">
                                     <span class="text-center"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="contrasenya" id="contrasenya"  placeholder="Escribe tu contraseña" required/>
+                                    <input type="password" class="form-control" name="contrasenia" id="contrasenia"  placeholder="Escribe tu contraseña" required/>
                                 </div>
                             </div>
                         </div>
