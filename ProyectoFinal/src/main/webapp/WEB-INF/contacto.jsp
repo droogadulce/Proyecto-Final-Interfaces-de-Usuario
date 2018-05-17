@@ -59,33 +59,53 @@
             </form>
         </nav>
         <!-- Contacto -->
+        <section class="call-to-action text-white text-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <h2 class="mb-4">Datos de contacto</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="container">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <h3>DATOS DE CONTACTO</h3>
-                <p>Visitas Guiadas al Centro Cultural Universitario y Date un rol y conoce tu Universidad. </p>
-                <h4>Teléfono</h4>
+                <h3>Visitas Guiadas al Centro Cultural Universitario y Date un rol y conoce tu Universidad. </h3>
                 <p class="lead mb-0">
                     <i class="fa fa-phone" style="font-size:30px;"></i>
                     5622 7008 </p>
-                <br>
-                <p class="lead mb-0">
-                    <b>Jefa del área de Visitas Guiadas al CCU y Date un rol y conoce tu Universidad </b>
-                    <br>
-                    Mtra. Susana Bautista Cruz
-                    <br><i class="fa fa-envelope" style="font-size:30px;"></i>
-                    susanabautista170@hotmail.com
-                </p>
-                <br>
-                <p class="lead mb-0">
-                    <b>Asistente del área</b>
-                    <br>
-                    Lic. Pamela García Maldonado
-                    <br><i class="fa fa-envelope" style="font-size:30px;"></i>
-                    pamela.garcia.maldonado@gmail.com
-                </p>
             </div>
             <br>
         </div>
+        
+        <!-- Testimonials -->
+        <section class="testimonials text-center bg-light">
+            <div class="container">
+                <h2 class="mb-5">¡Escríbenos!</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+                            <h5>Mtra. Susana Bautista Cruz</h5>
+                            <p class="font-weight-light mb-0">Jefa del área de Visitas Guiadas al CCU y Date un rol y conoce tu Universidad</p>
+                            <p class="font-weight-normal mb-0"><i class="fa fa-envelope" style="font-size:20px;"></i>
+                    susanabautista170@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+                            <h5>Lic. Pamela García Maldonado</h5>
+                            <p class="font-weight-light mb-0">Asistente del área</p>
+                            <p class="font-weight-normal mb-0"><i class="fa fa-envelope" style="font-size:20px;"></i>
+                    pamela.garcia.maldonado@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="footer bg-light">
             <div class="container">
