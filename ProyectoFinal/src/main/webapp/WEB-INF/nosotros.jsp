@@ -13,7 +13,6 @@
 
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
         <!-- Custom fonts for this template -->
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
@@ -68,95 +67,79 @@
 
         </nav>
 
-        <!-- Icons Grid -->
-        <section class="features-icons bg-light text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-screen-desktop m-auto text-primary"></i>
-                            </div>
-                            <h3>Fully Responsive</h3>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-layers m-auto text-primary"></i>
-                            </div>
-                            <h3>Bootstrap 4 Ready</h3>
-                            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex">
-                                <i class="icon-check m-auto text-primary"></i>
-                            </div>
-                            <h3>Easy to Use</h3>
-                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <h1>Centro Cultural Universitario</h1>
+                <p class="lead" align="justify">Este centro inició su funcionamiento en 1976, con la inauguración de la Sala Nezahualcóyotl, 
+                    a partir de entonces se erige como un espacio único por reunir en el conjunto de sus recintos 
+                    una amplia oferta artística y cultural, para el disfrute de la comunidad universitaria y del 
+                    público en general. La labor que aquí tiene lugar se desarrolla bajo la responsabilidad de la 
+                    Coordinación de Difusión Cultural, institución que tiene como una de sus funciones sustantivas, 
+                    extender el alcance de los bienes y servicios culturales a la comunidad universitaria y al público 
+                    en general. Los recintos culturales de este conjunto: Sala Nezahualcóyotl, Sala Carlos Chávez, 
+                    Teatro Juan Ruiz de Alarcón, Foro Sor Juana Inés de la Cruz, Centro Universitario de Teatro, 
+                    Sala Miguel Covarrubias, Salas de Cine: Julio Bracho, José
+                    Revueltas y Carlos Monsiváis, además del Museo Universitario Arte Contemporáneo; todos sede, punto 
+                    de partida y de cruce de caminos para una amplia diversidad de propuestas artísticas y culturales.
+                    <br>
+                    En sus espacios abiertos el visitante disfrutará de la experiencia visual, táctil y de integración
+                    al espacio transitable que constituyen el Paseo de las Esculturas, el Espacio Escultórico y las 
+                    Serpientes del Pedregal.</p>
             </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials text-center bg-light">
-            <div class="container">
-                <h2 class="mb-5">What people are saying...</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-                            <h5>Margaret E.</h5>
-                            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-                            <h5>Fred S.</h5>
-                            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-                            <h5>Sarah W.</h5>
-                            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="call-to-action text-white text-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                    </div>
-                    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                                    <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-                                </div>
-                                <div class="col-12 col-md-3">
-                                    <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+        </div>  
+                <!-- Recorridos -->
+                <section class="testimonials text-center bg-light">
+                    <div class="container">
+                        <h2 class="mb-5">Información sobre los recorridos</h2>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                    <a href="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2017/03/POLIPTICO_DATE_UN_ROL_2017.pdf" target="_blank">
+                                        <img class="img-fluid mb-3" src="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2015/01/BANNER-DATE-UN-ROL-2.jpg" width="200" style="border: none;">
+                                    </a>
+                                    <h5>Date un Rol y Conoce tu Universidad</h5>
+                                    <p class="font-weight-light mb-0">(Español)</p>
                                 </div>
                             </div>
-                        </form>
+                            <div class="col-lg-4">
+                                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                    <a href="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2017/03/DATE_UN-ROL_poliptico_ingles_2017.pdf" target="_blank">
+                                        <img class="img-fluid mb-3" src="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2015/05/portada_ingles_.png" width="200" style="border: none;">
+                                    </a>
+                                    <h5>Swing by and get to know your university</h5>
+                                    <p class="font-weight-light mb-0">(English)</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                    <a href="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2017/03/VISITAS_GUIADAS-2017_zona_cultural_actualizado.pdf" target="_blank">
+                                        <img class="img-fluid mb-3" src="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2015/01/BANNER-VISITAS-GUIADAS.jpg" width="200" style="border: none;">
+                                    </a>
+                                    <h5>Centro Cultural Universitario: Visitas guiadas</h5>
+                                    <p class="font-weight-light mb-0">(Español)</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                                    <a href="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2017/03/VISITAS_GUIADAS_2017_zona_cultural_ingles.pdf" target="_blank">
+                                        <img class="img-fluid mb-3" src="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2015/01/BANNER-VISITAS-GUIADAS-INGLE%CC%81S.jpg" width="200" style="border: none;">
+                                    </a>
+                                    <h5>University Cultural Center: Guided tours</h5>
+                                    <p class="font-weight-light mb-0">(English)</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>
 
+
+        
+        
+        
+        
+        
+
+        
         <!-- Footer -->
         <footer class="footer bg-light">
             <div class="container">
