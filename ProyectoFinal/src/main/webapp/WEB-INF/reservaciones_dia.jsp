@@ -15,9 +15,36 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
-        <script type="text/javascript">
-            $('.carousel').carousel({
-                interval: 2000
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function () {
+                $("#datepicker").datepicker({
+                    beforeShowDay: $.datepicker.noWeekends
+                });
+            });
+
+            $.datepicker.regional['es'] = {
+                closeText: 'Cerrar',
+                prevText: '< Ant',
+                nextText: 'Sig >',
+                currentText: 'Hoy',
+                monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+                dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
+                dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+                weekHeader: 'Sm',
+                dateFormat: 'dd/mm/yy',
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ''
+            };
+            $.datepicker.setDefaults($.datepicker.regional['es']);
+            $(function () {
+                $("#fecha").datepicker();
             });
         </script>
         <style type="text/css">
@@ -75,33 +102,30 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
             </form>
         </nav>
-        <!-- Call to Action -->
-        <section class="call-to-action text-white text-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-9 mx-auto">
-                        <h2 class="mb-4">Realiza tu reservación en línea</h2>
-                    </div>
+
+        <div class="container">        
+            <!-- Form code begins -->
+            <form method="post">
+                <div class="form-group"> <!-- Cantidad personas -->
+                    <label class="control-label" for="date">Selecciona el número de personas:</label>
+                    <input type="number" min="1" max="20" value="1">
                 </div>
-            </div>
-        </section>
-        <section>
-            <form action="${pageContext.request.contextPath}/reservaciones_dia" method="get">
-                <div class="col-12 col-md-5" align="center">
-                    <button type="submit" class="btn-xlarge" value="1">VISITA GUIADA AL CENTRO CULTURAL UNIVERSITARIO</button>
+                <div class="form-group"> <!-- Fecha input -->
+                    <label class="control-label" for="date">Selecciona la fecha en la que nos visitarás:</label>
+                    <input class="form-control" id="datepicker" name="date" placeholder="DD/MM/YYYY" type="text"/>
                 </div>
-                <div class="col-12 col-md-5" align="center">
-                    <button type="submit" class="btn-xlarge" value="2">DATE UN ROL Y CONOCE TU UNIVERSIDAD</button>
+                <div class="form-group"> <!-- Fecha input -->
+                    <label class="control-label" for="date">Selecciona el horario:</label>
+                    <input type="time" name="hora" value="10:00:00" max="14:00:00" min="10:00:00" step="1">
                 </div>
-                <div class="col-12 col-md-5" align="center">
-                    <button type="submit" class="btn-xlarge" value="3">ECONOCE TU UNIVERSIDAD</button>
-                </div>
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <p class="lead mb-0" align="center">¡Recuerda que también puedes hacer tu reservación al teléfono 56227008!</p>
+                <div class="form-group"> <!-- Submit button -->
+                    <button class="btn btn-primary " name="submit" type="submit">Continuar</button>
                 </div>
             </form>
-        </section>
+            <!-- Form code ends --> 
+
+
+        </div>
         <!-- Footer -->
         <footer class="footer bg-light">
             <div class="container">
@@ -148,10 +172,5 @@
                 </div>
             </div>
         </footer>
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     </body>
-
 </html>

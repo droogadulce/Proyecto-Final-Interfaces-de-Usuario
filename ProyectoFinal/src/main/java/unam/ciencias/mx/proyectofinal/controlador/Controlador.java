@@ -168,5 +168,16 @@ public class Controlador {
     public String contacto(ModelMap model){
         return "contacto"; 
     }
+    
+    /**
+     * Vista reservaciones por día.
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value="/reservaciones_dia", method = RequestMethod.GET)
+    public String reservacionesDia(ModelMap model){
+        return "reservaciones_dia"; 
+    }
 
 }
