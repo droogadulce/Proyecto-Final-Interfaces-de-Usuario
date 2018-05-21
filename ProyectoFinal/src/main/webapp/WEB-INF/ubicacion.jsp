@@ -21,6 +21,19 @@
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            #ubicacion {
+                background-image: url(http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/galeria/03.jpg);
+            }
+            .h_obs {
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-color: black;
+                -webkit-text-stroke-width: 0.76px;
+            }
+            p {
+                padding: 10px;
+            }
+        </style>
     </head>
 
     <body>
@@ -64,12 +77,11 @@
 
         <!--TÃ­tulo-->
         <!-- Call to Action -->
-        <section class="call-to-action text-white text-center">
-            <div class="overlay"></div>
+        <section class="call-to-action text-white text-center" id="ubicacion">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
-                        <h2 class="mb-4">¿Cómo llegar al CCU?</h2>
+                        <h2 class="h_obs">¿Cómo llegar al CCU?</h2>
                     </div>
                 </div>
             </div>
