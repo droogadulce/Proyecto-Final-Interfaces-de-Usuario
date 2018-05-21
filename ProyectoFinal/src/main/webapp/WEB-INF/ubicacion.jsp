@@ -33,6 +33,28 @@
             p {
                 padding: 10px;
             }
+            .square {
+                width: 100%;
+                background-color: black;
+            }
+            .imagen {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            .txt_footer {
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                padding-top: 10px;
+
+            }
+            .footer-sp {
+                padding-top: 12px;
+                padding-top: 10px;
+            }
         </style>
     </head>
 
@@ -125,33 +147,33 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer bg-light">
+        <footer class="footer-sp bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
                         <ul class="list-inline mb-2">
                             <li class="list-inline-item">
-                                <a href="#">About</a>
+                                <a href="#">Inicio</a>
                             </li>
                             <li class="list-inline-item">&sdot;</li>
                             <li class="list-inline-item">
-                                <a href="#">Contact</a>
+                                <a href="#">Contacto</a>
                             </li>
                             <li class="list-inline-item">&sdot;</li>
                             <li class="list-inline-item">
-                                <a href="#">Terms of Use</a>
+                                <a href="#">Términos de Uso</a>
                             </li>
                             <li class="list-inline-item">&sdot;</li>
                             <li class="list-inline-item">
-                                <a href="#">Privacy Policy</a>
+                                <a href="#">Política de Privacidad</a>
                             </li>
                         </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2018. All Rights Reserved.</p>
+
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item mr-3">
-                                <a href="#">
+                                <a href="https://www.facebook.com/visitasguiadas.ccuunam/">
                                     <i class="fa fa-facebook fa-2x fa-fw"></i>
                                 </a>
                             </li>
@@ -169,7 +191,17 @@
                     </div>
                 </div>
             </div>
+
         </footer>
+        <div class="square">
+            <img class="imagen" style="width: 17%;" src="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/escudo_firma_UNAM_culturaUNAM.png">
+            <p class="text-muted small mb-4 mb-lg-0 txt_footer">&copy;
+                Coordinación de Difusión Cultural, Ciudad Universitaria, Av. Insurgentes Sur 3000, México D.F. Del. Coyoacán, C. P. 04510. 
+                Todos los derechos reservados 2018. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se 
+                mutile, se cite la fuente completa y su dirección electrónica. De otra forma requiere permiso previo por escrito de la 
+                institución.
+            </p>
+        </div>
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
