@@ -139,7 +139,7 @@
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
 
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/62.jpg');"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/62.png');"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2>VISITA GUIADA AL CENTRO CULTURAL UNIVERSITARIO</h2>
                         <p class="lead mb-0">Recorrido por los recintos que integran el Centro Cultural Universitario. Es un espacio digno de visitarse con la posibilidad de leer más allá de lo que a primera vista conoce todo visitante. Se proporcionan datos históricos, arquitectónicos y sobre los contenidos que se ofrecen en sus instalaciones. </p><br>
@@ -151,7 +151,7 @@
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/4.jpg');"></div>
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/4.png');"></div>
                     <div class="col-lg-6 my-auto showcase-text">
                         <h2>DATE UN ROL Y CONOCE TU UNIVERSIDAD</h2>
                         <p class="lead mb-0">Recorrido en autobús (sin paradas) por el primer circuito de Ciudad Universitaria. A través de él, los visitantes conocen información histórica, arquitectónica y sobre los servicios de los 20 puntos que abarca, entre ellos: la Reserva Ecológica del Pedregal de San Ángel, la Torre de Rectoría, la Biblioteca Central, la Alberca Olímpica Universitaria, el Estadio Olímpico Universitario, las diversas facultades, entre otros.
@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/118.jpg');"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/118.png');"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2>ECONOCE TU UNIVERSIDAD</h2>
                         <p class="lead mb-0">Recorrido al Espacio y el Paseo Escultóricos: obra interdisciplinaria que conjuga la ecología y el arte. 
