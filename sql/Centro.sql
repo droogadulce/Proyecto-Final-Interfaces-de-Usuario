@@ -1,0 +1,16 @@
+
+CREATE TABLE  Usuario(
+id_usuario INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(90),
+apellidos VARCHAR(120),
+correo VARCHAR(90),
+telefono VARCHAR (50),
+sexo VARCHAR(90)
+);
+
+CREATE TABLE Citas(
+id_cita INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+fecha_hora DATETIME,
+ id_usuario INTEGER NOT NULL,
+ FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario)
+);

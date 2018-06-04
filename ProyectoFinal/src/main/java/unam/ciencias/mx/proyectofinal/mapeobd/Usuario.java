@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlTransient;
  * @author Alan Moreno de la Rosa
  */
 @Entity
-@Table(name = "usuario")
+@Table(name = "Usuario")
 
 public class Usuario {
 
@@ -34,14 +34,20 @@ public class Usuario {
     private int id_usuario;
     @Column(name = "nombre")
     private String nombre;
-    @Column(name = "apellido")
+    @Column(name = "apellidos")
     private String apellido;
- //   @Column(name = "fecha_nacimiento")
-    //private Date fecha_nacimiento;
+    @Column (name="sexo")
+    private String sexo;
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
     @Column(name = "correo")
     private String correo;
-    @Column(name = "contrasenia")
-    private String contrasenia;
     @Column(name = " telefono")
     private String telefono;
   //  @Column(name = "cuenta_valida")
@@ -50,8 +56,6 @@ public class Usuario {
     //private boolean notificaciones;
    // @Column(name = "idTipoVisitante")
    // private int idTipoVisitante;
-    @Column(name = "rol")
-    private String rol;
 
     public int getId_usuario() {
         return id_usuario;
@@ -77,14 +81,6 @@ public class Usuario {
         this.apellido = apellido;
     }
 
-  /*  public Date getFecha_nacimiento() {
-        return fecha_nacimiento;
-    }
-
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
-        this.fecha_nacimiento = fecha_nacimiento;
-    }*/
-
     public String getCorreo() {
         return correo;
     }
@@ -93,52 +89,12 @@ public class Usuario {
         this.correo = correo;
     }
 
-    public String getContrasenia() {
-        return contrasenia;
-    }
-
-    public void setContrasenia(String contrasenia) {
-        this.contrasenia = contrasenia;
-    }
-
     public String getTelefono() {
         return telefono;
     }
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
-    }
-
-    /*public boolean isCuenta_valida() {
-        return cuenta_valida;
-    }
-
-    public void setCuenta_valida(boolean cuenta_valida) {
-        this.cuenta_valida = cuenta_valida;
-    }
-
-    public boolean isNotificaciones() {
-        return notificaciones;
-    }
-
-    public void setNotificaciones(boolean notificaciones) {
-        this.notificaciones = notificaciones;
-    }
-
-    public int getIdTipoVisitante() {
-        return idTipoVisitante;
-    }
-
-    public void setIdTipoVisitante(int idTipoVisitante) {
-        this.idTipoVisitante = idTipoVisitante;
-    }*/
-
-    public String getRol() {
-        return rol;
-    }
-
-    public void setRol(String rol) {
-        this.rol = rol;
     }
 
 }

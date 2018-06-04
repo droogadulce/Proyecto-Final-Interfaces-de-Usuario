@@ -59,45 +59,28 @@ public class Controlador {
 
     @RequestMapping(value = "/registrar", method = RequestMethod.POST)
     public ModelAndView guardarUsuario(HttpServletRequest request, ModelMap model) throws ParseException {
-        //System.out.println(request.getParameter("ID_USUARIO"));
-
-        //int id= Integer.parseInt(request.getParameter("ID_USUARIO"));
-        //System.out.println(id);
         String nombre = request.getParameter("nombre");
-        String apellido = request.getParameter("apellido");
+        String apellido = request.getParameter("apellidos");
         //String fecha_nacimiento = request.getParameter("fecha_nacimiento");
         //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         //Date startDate = sdf.parse(fecha_nacimiento);
         
         String correo = request.getParameter("correo");
-        String contrasenia = request.getParameter("contrasenia");
         String telefono= request.getParameter("telefono");
-        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        String hashedPassword = passwordEncoder.encode(contrasenia);
-        System.out.println(hashedPassword);
-        String contrasenaConf = request.getParameter("confirm");
+        String sexo = request.getParameter("sexo");
         Usuario u = null;
-        if (u == null && contrasenia.equals(contrasenaConf)) {
             u = new Usuario();
             u.setNombre(nombre);
             u.setApellido(apellido);
-            //u.setFecha_nacimiento(startDate);
             u.setCorreo(correo);
             u.setTelefono(telefono);
-            u.setContrasenia(hashedPassword);
-            u.setRol("ROLE_ADMIN");
-            //u.setNotificaciones(true);
-            //u.setIdTipoVisitante(0);
-
+            u.setSexo(sexo);
             usuario_bd.guardar(u);
             model.addAttribute("correo", correo);
-            // return "profile";
+            
             return new ModelAndView("reservaciones", model);
-        }
         // ModelMap model = new ModelMap(); 
         //  model.addAttribute("correo", u.getCorreo());
-
-        return new ModelAndView("inicio", model);
     }
 
     @RequestMapping(value = "/registro", method = RequestMethod.GET)
