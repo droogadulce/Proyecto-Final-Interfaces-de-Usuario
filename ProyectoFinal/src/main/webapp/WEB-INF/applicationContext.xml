@@ -24,6 +24,7 @@
             <list>
            
                 <value>unam.ciencias.mx.proyectofinal.mapeobd.Usuario</value>
+                 <value>unam.ciencias.mx.proyectofinal.mapeobd.Citas</value>
            
             </list>
         </property>
@@ -42,6 +43,7 @@
     
     
     <bean id="UsuarioDAO" class="unam.ciencias.mx.proyectofinal.modelo.UsuarioDAO" p:sessionFactory-ref="hibernate4AnnotatedSessionFactory"/>
+    <bean id="CitasDAO" class="unam.ciencias.mx.proyectofinal.modelo.CitasDAO" p:sessionFactory-ref="hibernate4AnnotatedSessionFactory"/>
  
       <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

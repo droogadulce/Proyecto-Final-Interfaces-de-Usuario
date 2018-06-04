@@ -21,6 +21,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import unam.ciencias.mx.proyectofinal.modelo.CitasDAO;
 
 /**
  *
@@ -49,6 +50,8 @@ public class Controlador {
 
     @Autowired
     private UsuarioDAO usuario_bd;
+     @Autowired
+    private CitasDAO cita_bd;
     
 
      @RequestMapping(value="/", method = RequestMethod.GET)
