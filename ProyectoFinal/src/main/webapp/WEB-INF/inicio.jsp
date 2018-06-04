@@ -84,14 +84,6 @@
                     </li>
                 </ul>
             </div>
-            <form action="${pageContext.request.contextPath}/registro"   class="form-signin">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Registrarse</button>
-            </form>
-            <form action="${pageContext.request.contextPath}/sesion" method="GET" class="login-form">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-            </form>
-
-
         </nav>
 
         <!-- Masthead-->
@@ -119,7 +111,7 @@
                 <div class="carousel-item">
                     <img class="d-block w-100" src="img/banner3.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>ECONOCE TU UNIVERSIDAD</h5>
+                        <h5>RECONOCE TU UNIVERSIDAD</h5>
                         <p>Jardín Botánico</p>
                     </div>
                 </div>

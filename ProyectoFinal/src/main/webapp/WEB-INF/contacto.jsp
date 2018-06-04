@@ -87,12 +87,7 @@
                     </li>
                 </ul>
             </div>
-            <form action="${pageContext.request.contextPath}/registro"   class="form-signin">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Registrarse</button>
-            </form>
-            <form action="${pageContext.request.contextPath}/login" method="POST" class="login-form">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-            </form>
+
         </nav>
         <!-- Contacto -->
         <section class="call-to-action text-white text-center" id="contacto">

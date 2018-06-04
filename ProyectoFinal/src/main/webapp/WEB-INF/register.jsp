@@ -85,9 +85,7 @@
                     </li>
                 </ul>
             </div>
-            <form action="${pageContext.request.contextPath}/login" method="POST" class="login-form">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-            </form>
+
 
 
         </nav>
@@ -158,27 +156,6 @@
                                 <option>Masculino</option>
                             </select>
 
-                        </div>
-
-                        <div class="form-group">
-                            <label for="contrasenya" class="cols-sm-2 control-label">Contraseña: </label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="text-center"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="contrasenia" id="contrasenia"  placeholder="Escribe tu contraseña" required/>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="form-group">
-                            <label for="confirm" class="cols-sm-2 control-label">Confirmar Contraseña: </label>
-                            <div class="cols-sm-10">
-                                <div class="input-group">
-                                    <span class="text-center"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                                    <input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirma tu contraseña" required/>
-                                </div>
-                            </div>
                         </div>
 
                         <div class="form-group ">

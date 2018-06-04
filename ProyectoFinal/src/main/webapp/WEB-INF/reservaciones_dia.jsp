@@ -117,17 +117,11 @@
                     </li>
                 </ul>
             </div>
-            <form action="${pageContext.request.contextPath}/registro"   class="form-signin">
-                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Registrarse</button>
-            </form>
-            <form action="${pageContext.request.contextPath}/login" method="POST" class="login-form">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Iniciar Sesión</button>
-            </form>
         </nav>
 
         <div class="container">        
             <!-- Form code begins -->
-            <form method="post">
+            <!-- <form method="get">-->
                 <div class="form-group"> <!-- Cantidad personas -->
                     <label class="control-label" for="date">Selecciona el número de personas:</label>
                     <input type="number" min="1" max="20" value="1">
@@ -140,13 +134,14 @@
                     <label class="control-label" for="date">Selecciona el horario:</label>
                     <input type="time" name="hora" value="10:00:00" max="14:00:00" min="10:00:00" step="1">
                 </div>
+                
+                 <form action="${pageContext.request.contextPath}/registro"   class="form-signin">
                 <div class="form-group"> <!-- Submit button -->
                     <button class="btn btn-primary " name="submit" type="submit">Continuar</button>
                 </div>
-            </form>
+                  </form>
+          <!-- </form> -->
             <!-- Form code ends --> 
-
-
         </div>
             <!-- Footer -->
             <%@ include file="footer.jsp" %>
