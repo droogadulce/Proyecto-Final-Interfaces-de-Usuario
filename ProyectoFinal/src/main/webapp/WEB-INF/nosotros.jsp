@@ -20,11 +20,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
-        <script type="text/javascript">
-            $('.carousel').carousel({
-                interval: 2000
-            });
-        </script>
+
         <style>
             #ccu {
                 background-image: url(http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/galeria/01.jpg);
@@ -58,6 +54,17 @@
             .footer-sp {
                 padding-top: 12px;
                 padding-top: 10px;
+            }
+            .espacio {
+                padding: 10px;
+                margin: 5px;
+                background-color: #D9EDF7;
+            }
+            #ingles {
+                display: none;
+            }
+            #espanol {
+                display: none;
             }
         </style>
 
@@ -99,37 +106,41 @@
         <section class="call-to-action text-white text-center" id="ccu">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-6 mx-auto">
+                    <!--<div class="col-xl-6 mx-auto">
                         <h2 class="h_obs">Centro Cultural Universitario</h2>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>       
 
         <div class="container">
+            <h2 class="mb-5" style="padding-top: 10px;">Centro Cultural Universitario</h2>
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                <p class="lead" align="justify">Este centro inició su funcionamiento en 1976, con la inauguración de la Sala Nezahualcóyotl, 
+                <p class="lead espacio" align="justify">Este centro inició su funcionamiento en 1976 y 
                     a partir de entonces se erige como un espacio único por reunir en el conjunto de sus recintos 
                     una amplia oferta artística y cultural, para el disfrute de la comunidad universitaria y del 
-                    público en general. La labor que aquí tiene lugar se desarrolla bajo la responsabilidad de la 
-                    Coordinación de Difusión Cultural, institución que tiene como una de sus funciones sustantivas, 
-                    extender el alcance de los bienes y servicios culturales a la comunidad universitaria y al público 
-                    en general. Los recintos culturales de este conjunto: Sala Nezahualcóyotl, Sala Carlos Chávez, 
+                    público en general. 
+                </p>
+                <p class="lead espacio" align="justify">Los recintos culturales de este conjunto: Sala Nezahualcóyotl, Sala Carlos Chávez, 
                     Teatro Juan Ruiz de Alarcón, Foro Sor Juana Inés de la Cruz, Centro Universitario de Teatro, 
                     Sala Miguel Covarrubias, Salas de Cine: Julio Bracho, José
-                    Revueltas y Carlos Monsiváis, además del Museo Universitario Arte Contemporáneo; todos sede, punto 
-                    de partida y de cruce de caminos para una amplia diversidad de propuestas artísticas y culturales.
-                    <br>
-                    En sus espacios abiertos el visitante disfrutará de la experiencia visual, táctil y de integración
+                    Revueltas y Carlos Monsiváis, además del Museo Universitario Arte Contemporáneo.
+                </p>
+                <p class="lead espacio" align="justify">En sus espacios abiertos el visitante disfrutará de la experiencia visual, táctil y de integración
                     al espacio transitable que constituyen el Paseo de las Esculturas, el Espacio Escultórico y las 
                     Serpientes del Pedregal.</p>
             </div>
         </div>  
-        <!-- Recorridos español -->
+        <!--Recorridos-->
         <section class="testimonials text-center bg-light">
+            <h2 class="mb-5">Información sobre los recorridos</h2>
+            <button class="btn btn-primary" onclick="myFunction()">Español</button>
+            <button class="btn btn-primary" onclick="myFunction2()">English</button>
+        </section>
+        <!-- Recorridos español -->
+        <section class="testimonials text-center" id="espanol">
             <div class="container">
-                <h2 class="mb-5">Información sobre los recorridos</h2>
-                <div class="row">
+                <div class="row" >
                     <div class="col-lg-6">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <a href="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/uploads/2017/03/POLIPTICO_DATE_UN_ROL_2017.pdf" target="_blank">
@@ -147,13 +158,13 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- Recorridos ingles -->
-        <section class="testimonials text-center ">
+        <section class="testimonials text-center " id="ingles">
             <div class="container">
-                <h2 class="mb-5">Information about the routes</h2>
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
@@ -174,6 +185,32 @@
                 </div>
             </div>
         </section>
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("espanol");
+                var y = document.getElementById("ingles");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    y.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+            function myFunction2() {
+
+                var y = document.getElementById("ingles");
+                var x = document.getElementById("espanol");
+                if (y.style.display === "none") {
+
+                    y.style.display = "block";
+                    x.style.display = "none";
+
+                } else {
+                    y.style.display = "none";
+                }
+            }
+
+        </script>
 
         <!-- Footer -->
         <%@ include file="footer.jsp" %>
