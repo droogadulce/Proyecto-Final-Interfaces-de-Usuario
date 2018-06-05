@@ -21,6 +21,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import unam.ciencias.mx.proyectofinal.mapeobd.Citas;
 import unam.ciencias.mx.proyectofinal.modelo.CitasDAO;
 
 /**
@@ -63,14 +64,15 @@ public class Controlador {
     @RequestMapping(value = "/registrar", method = RequestMethod.POST)
     public ModelAndView guardarUsuario(HttpServletRequest request, ModelMap model) throws ParseException {
         String nombre = request.getParameter("nombre");
-        String apellido = request.getParameter("apellidos");
-        //String fecha_nacimiento = request.getParameter("fecha_nacimiento");
-        //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        //Date startDate = sdf.parse(fecha_nacimiento);
-        
+        String apellido = request.getParameter("apellidos");        
         String correo = request.getParameter("correo");
         String telefono= request.getParameter("telefono");
         String sexo = request.getParameter("sexo");
+        String fecha = request.getParameter("fecha_hora");
+        Date startDate=new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(fecha);
+       
+        System.out.print(fecha);
+        Citas c=null;
         Usuario u = null;
             u = new Usuario();
             u.setNombre(nombre);
@@ -79,7 +81,13 @@ public class Controlador {
             u.setTelefono(telefono);
             u.setSexo(sexo);
             usuario_bd.guardar(u);
-            model.addAttribute("correo", correo);
+          
+            c=new Citas();
+            c.setFecha(startDate);
+            c.setId_usuario(u.getId_usuario());
+            cita_bd.guardar(c);
+            
+            
             
             return new ModelAndView("reservaciones", model);
         // ModelMap model = new ModelMap(); 

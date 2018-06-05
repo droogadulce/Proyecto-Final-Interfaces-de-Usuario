@@ -118,7 +118,7 @@
                 </ul>
             </div>
         </nav>
-
+ <form action="${pageContext.request.contextPath}/citas"   class="form-signin" method="POST">
         <div class="container">        
             <!-- Form code begins -->
             <!-- <form method="get">-->
@@ -135,13 +135,14 @@
                     <input type="time" name="hora" value="10:00:00" max="14:00:00" min="10:00:00" step="1">
                 </div>
                 
-                 <form action="${pageContext.request.contextPath}/registro"   class="form-signin">
+                
                 <div class="form-group"> <!-- Submit button -->
                     <button class="btn btn-primary " name="submit" type="submit">Continuar</button>
                 </div>
-                  </form>
+                 
           <!-- </form> -->
             <!-- Form code ends --> 
         </div>
+ </form>
             <!-- Footer -->
             <%@ include file="footer.jsp" %>

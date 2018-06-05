@@ -157,8 +157,10 @@
                             </select>
 
                         </div>
-
-                        <div class="form-group ">
+                        <div>
+                            <input type=hidden name="fecha_hora" value="${fecha_hora}"/>                       
+                        </div>
+                        <div class="form-group "> 
                             <button id="button"  class="btn btn-primary btn-lg btn-block login-button">Registrarse</button>
                         </div>
 

@@ -18,7 +18,7 @@ import javax.persistence.Table;
  * @author hectorsama
  */
     @Entity
-    @Table(name = "Cita ")
+    @Table(name = "Citas")
 public class Citas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

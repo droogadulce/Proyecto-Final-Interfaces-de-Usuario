@@ -32,13 +32,13 @@ public class ControladorCitas {
        
          @RequestMapping(value = "/citas", method = RequestMethod.POST)
     public ModelAndView guardarUsuario(HttpServletRequest request, ModelMap model) throws ParseException {
-        Date startDate=new SimpleDateFormat("dd-MM-yyyy hh:mm:ss a").parse(request.getParameter("fecha_hora"));
+        String fecha_hora = request.getParameter("date")+" "+request.getParameter("hora");
+        
+        //Date startDate=new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(fecha_hora);
+       
+        
 
-        Citas u = null;
-            u = new Citas();
-          
-
-            model.addAttribute("fecha_hora", startDate);
+            model.addAttribute("fecha_hora", fecha_hora);
             
             return new ModelAndView("register", model);
        // ModelMap model = new ModelMap(); 
