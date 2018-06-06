@@ -1,16 +1,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-
         <title>Ubicación</title>
-
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -55,6 +51,12 @@
                 padding-top: 12px;
                 padding-top: 10px;
             }
+            .cuadro {
+                background-color: #EEEEEE;
+                border-radius: 25px;
+                padding: 20px; 
+                margin-top: 30px;
+            }
         </style>
     </head>
 
@@ -81,7 +83,7 @@
                         <a class="nav-link" href="${pageContext.request.contextPath}/promociones">Promociones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/ubicacion">Ubicación <span class="sr-only">(current)</span></a>
+                        <a class="nav-link current" href="${pageContext.request.contextPath}/ubicacion">Ubicación <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/contacto">Contacto</a>
@@ -104,10 +106,10 @@
         </section>
 
         <!-- Mapa -->
-        <div class="container">
+        <div class="container" style="margin-top:20px;">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                 <h3>Dirección</h3>
-                <p class="lead mb-0">Centro Cultural Universitario, Ciudad Universitaria, Coyoacán, Universidad Nacional Autónoma de México, 04510, Ciudad de México, CDMX</p>
+                <p class="lead mb-0 cuadro">Centro Cultural Universitario, Ciudad Universitaria, Coyoacán, Universidad Nacional Autónoma de México, 04510, Ciudad de México, CDMX</p>
             </div>
             <h3>Mapa</h3>
             <div id="googleMap" style="width:100%;height:500px;"></div>

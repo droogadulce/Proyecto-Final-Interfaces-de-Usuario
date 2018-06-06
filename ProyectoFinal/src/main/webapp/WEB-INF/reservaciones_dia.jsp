@@ -86,6 +86,16 @@
                 padding-top: 12px;
                 padding-top: 10px;
             }
+            .cuadro {
+                background-color: #EEEEEE;
+                border-radius: 25px;
+                padding: 20px; 
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .entrada {
+                border-radius: 5px;
+            }
         </style>
     </head>
     <body>
@@ -118,31 +128,34 @@
                 </ul>
             </div>
         </nav>
- <form action="${pageContext.request.contextPath}/citas"   class="form-signin" method="POST">
-        <div class="container">        
-            <!-- Form code begins -->
-            <!-- <form method="get">-->
+        <div class="container">
+            <h2 class="mb-5" style="padding-top: 10px;">Reservación en línea</h2>
+        </div>
+        <form action="${pageContext.request.contextPath}/citas"   class="form-signin" method="POST">
+            <div class="container cuadro">        
+                <!-- Form code begins -->
+                <!-- <form method="get">-->
                 <div class="form-group"> <!-- Cantidad personas -->
                     <label class="control-label" for="date">Selecciona el número de personas:</label>
-                    <input type="number" min="1" max="20" value="1">
+                    <input class="entrada" type="number" min="1" max="20" value="1">
                 </div>
                 <div class="form-group"> <!-- Fecha input -->
                     <label class="control-label" for="date">Selecciona la fecha en la que nos visitarás:</label>
-                    <input class="form-control" id="datepicker" name="date" placeholder="DD/MM/YYYY" type="text"/>
+                    <input class="entrada" id="datepicker" name="date" placeholder="DD/MM/YYYY" type="text"/>
                 </div>
                 <div class="form-group"> <!-- Fecha input -->
                     <label class="control-label" for="date">Selecciona el horario:</label>
-                    <input type="time" name="hora" value="10:00:00" max="14:00:00" min="10:00:00" step="1">
+                    <input class="entrada" type="time" name="hora" value="10:00:00" max="14:00:00" min="10:00:00" step="1">
                 </div>
-                
-                
+
+
                 <div class="form-group"> <!-- Submit button -->
                     <button class="btn btn-primary " name="submit" type="submit">Continuar</button>
                 </div>
-                 
-          <!-- </form> -->
-            <!-- Form code ends --> 
-        </div>
- </form>
-            <!-- Footer -->
-            <%@ include file="footer.jsp" %>
+
+                <!-- </form> -->
+                <!-- Form code ends --> 
+            </div>
+        </form>
+        <!-- Footer -->
+        <%@ include file="footer.jsp" %>
