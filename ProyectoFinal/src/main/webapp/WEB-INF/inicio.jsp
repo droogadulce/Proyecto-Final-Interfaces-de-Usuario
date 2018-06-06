@@ -49,6 +49,15 @@
                 padding-top: 12px;
                 padding-top: 10px;
             }
+            .jstfy-txt {
+                text-align: justify;
+            }
+            .cuadro {
+                background-color: #EEEEEE;
+                border-radius: 25px;
+                padding: 20px; 
+                margin-top: 30px;
+            }
         </style>
 
     </head>
@@ -132,9 +141,9 @@
                 <div class="row no-gutters">
 
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/62.png');"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text jstfy-txt">
                         <h2>VISITA GUIADA AL CENTRO CULTURAL UNIVERSITARIO</h2>
-                        <p class="lead mb-0">Recorrido por los recintos que integran el Centro Cultural Universitario. Es un espacio digno de visitarse con la posibilidad de leer más allá de lo que a primera vista conoce todo visitante. Se proporcionan datos históricos, arquitectónicos y sobre los contenidos que se ofrecen en sus instalaciones. </p><br>
+                        <p class="lead mb-0 cuadro">Recorrido por los recintos que integran el Centro Cultural Universitario. Es un espacio digno de visitarse con la posibilidad de leer más allá de lo que a primera vista conoce todo visitante. Se proporcionan datos históricos, arquitectónicos y sobre los contenidos que se ofrecen en sus instalaciones. </p><br>
                         <p class="lead mb-0">
                             <b>Duración: </b> 2 horas <br>
                             <b>Aforo: </b> 40 personas <br>
@@ -144,12 +153,11 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/4.png');"></div>
-                    <div class="col-lg-6 my-auto showcase-text">
+                    <div class="col-lg-6 my-auto showcase-text jstfy-txt">
                         <h2>DATE UN ROL Y CONOCE TU UNIVERSIDAD</h2>
-                        <p class="lead mb-0">Recorrido en autobús (sin paradas) por el primer circuito de Ciudad Universitaria. A través de él, los visitantes conocen información histórica, arquitectónica y sobre los servicios de los 20 puntos que abarca, entre ellos: la Reserva Ecológica del Pedregal de San Ángel, la Torre de Rectoría, la Biblioteca Central, la Alberca Olímpica Universitaria, el Estadio Olímpico Universitario, las diversas facultades, entre otros.
+                        <p class="lead mb-0 cuadro">Recorrido en autobús (sin paradas) por el primer circuito de Ciudad Universitaria. A través de él, los visitantes conocen información histórica, arquitectónica y sobre los servicios de los 20 puntos que abarca, entre ellos: la Reserva Ecológica del Pedregal de San Ángel, la Torre de Rectoría, la Biblioteca Central, la Alberca Olímpica Universitaria, el Estadio Olímpico Universitario, las diversas facultades, entre otros.
                         </p>
                         <br>
-
                         <p class="lead mb-0"> 
                             <b>Duración: </b>60 minutos <br>
                             <b>Aforo: </b>40 personas <br>
@@ -159,15 +167,15 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/118.png');"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text jstfy-txt">
                         <h2>ECONOCE TU UNIVERSIDAD</h2>
-                        <p class="lead mb-0">Recorrido al Espacio y el Paseo Escultóricos: obra interdisciplinaria que conjuga la ecología y el arte. 
-
+                        <p class="lead mb-0 cuadro">Recorrido al Espacio y el Paseo Escultóricos: obra interdisciplinaria que conjuga la ecología y el arte. 
                             Podrás aprender más acerca de la vegetación agreste y fauna típica del Pedregal de San Ángel de una forma lúdica y placentera.</p>
+                        <br>
                         <p class="lead mb-0">
                             <b>Duración: </b>60 minutos <br>
                             <b>Aforo: </b>20 personas <br>
-                            <b>Punto de encuentro: </b> ? 
+                            <b>Punto de encuentro: </b> "La Espiga", escultura monumental frente al MUAC. 
                         </p>
                     </div>
                 </div>
