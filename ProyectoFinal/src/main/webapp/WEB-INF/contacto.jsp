@@ -16,11 +16,6 @@
 
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
-        <script type="text/javascript">
-            $('.carousel').carousel({
-                interval: 2000
-            });
-        </script>
         <style>
             #contacto {
                 background-image: url(http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/galeria/02.jpg);
@@ -99,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <div class="container">
+        <div class="container" style="margin-top:20px;">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                 <h3>Visitas Guiadas al Centro Cultural Universitario y Date un rol y conoce tu Universidad. </h3>
                 <p class="lead mb-0">
