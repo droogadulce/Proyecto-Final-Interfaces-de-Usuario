@@ -87,11 +87,11 @@ public class Controlador {
             c.setId_usuario(u.getId_usuario());
             cita_bd.guardar(c);
             
-            
+            String mensaje = "Hola "+u.getNombre()
+                    +",\n\nTu cita fue hecha con exito para "+c.getFecha();
+            GoogleSmtpConnector.sendMessage(u.getCorreo(), "Visitas CCU", mensaje);
             
             return new ModelAndView("reservaciones", model);
-        // ModelMap model = new ModelMap(); 
-        //  model.addAttribute("correo", u.getCorreo());
     }
 
     @RequestMapping(value = "/registro", method = RequestMethod.GET)
