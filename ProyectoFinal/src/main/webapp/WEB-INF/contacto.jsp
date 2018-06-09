@@ -16,6 +16,7 @@
 
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
         <style>
             #contacto {
                 background-image: url(http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/galeria/02.jpg);
@@ -55,14 +56,14 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <a class="navbar-brand" href="#">Visitas CCU</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
@@ -78,7 +79,7 @@
                         <a class="nav-link" href="${pageContext.request.contextPath}/ubicacion">Ubicación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/contacto">Contacto <span class="sr-only">(current)</span></a>
+                        <a class="nav-link selected" href="${pageContext.request.contextPath}/contacto">Contacto</a>
                     </li>
                 </ul>
             </div>

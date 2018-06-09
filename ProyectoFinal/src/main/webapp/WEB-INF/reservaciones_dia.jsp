@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link href="css/header.css" rel="stylesheet">
         <script>
             $(function () {
                 $("#datepicker").datepicker({
@@ -100,21 +101,21 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <a class="navbar-brand" href="#">Visitas CCU</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="${pageContext.request.contextPath}/reservaciones">Reservaciones <span class="sr-only">(current)</span></a>
+                        <a class="nav-link selected" href="${pageContext.request.contextPath}/reservaciones">Reservaciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/promociones">Promociones</a>

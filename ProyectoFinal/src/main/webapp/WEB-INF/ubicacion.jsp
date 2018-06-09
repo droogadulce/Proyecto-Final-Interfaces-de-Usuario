@@ -17,6 +17,7 @@
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="css/header.css" rel="stylesheet">
         <style>
             #ubicacion {
                 background-image: url(http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/galeria/03.jpg);
@@ -62,7 +63,7 @@
 
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,7 +71,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <a class="navbar-brand" href="#">Visitas CCU</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
@@ -83,7 +84,7 @@
                         <a class="nav-link" href="${pageContext.request.contextPath}/promociones">Promociones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link current" href="${pageContext.request.contextPath}/ubicacion">Ubicación <span class="sr-only">(current)</span></a>
+                        <a class="nav-link selected" href="${pageContext.request.contextPath}/ubicacion">Ubicación</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="${pageContext.request.contextPath}/contacto">Contacto</a>
