@@ -97,6 +97,14 @@
             .entrada {
                 border-radius: 5px;
             }
+            #reservacionImg {
+                background-image: url(http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/galeria/05.jpg);
+            }
+            .h_obs {
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-color: black;
+                -webkit-text-stroke-width: 0.76px;
+            }
         </style>
     </head>
     <body>
@@ -129,6 +137,16 @@
                 </ul>
             </div>
         </nav>
+        <!-- Call to Action -->
+        <section class="call-to-action text-black text-center" id="reservacionImg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 mx-auto">
+                        <h2 class="h_obs" >Realiza tu reservación en línea</h2>
+                    </div>
+                </div>
+            </div>
+        </section>        
         <div class="container">
             <h2 class="mb-5" style="padding-top: 10px;">Reservación en línea</h2>
         </div>
