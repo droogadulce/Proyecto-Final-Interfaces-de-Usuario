@@ -22,7 +22,15 @@
                         </ul>
                         
                     </div>
-                    
+                    <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/visitasguiadas.ccuunam/">
+                                    <i class="fa fa-facebook fa-2x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
