@@ -72,6 +72,18 @@
                 padding-top: 12px;
                 padding-top: 10px;
             }
+            .cuadro {
+                width: 50%;
+                background-color: #EEEEEE;
+                border-radius: 25px;
+                padding: 20px; 
+                margin: auto;
+                float: top;
+                margin-top:100px;
+            }
+            .jstfy-txt {
+                text-align: justify;
+            }
         </style>
     </head>
     <body>
@@ -129,39 +141,37 @@
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="img/student.png" alt="">
                             <h5>Descuento general   </h5>
-                            
-                            
-                            <ul>
-                                <i>Estudiantes y maestros en general</i>
-                                <i>Egresados y trabajadores de la UNAM</i>
-                                <i>Jubilados del ISSSTE, IMSS e INAPAM</i>
-                            </ul>
-                                
-                            <p class="font-weight-normal mb-0"><i class="fa fa-ticket" style="font-size:20px;"></i>
-                    Boletos con el 50% de descuento en taquilla con credencial vigente. El Interesado deberá solicitar el descuento en persona.</p>
+                            <p class="font-weight-light mb-0"><i class="fa fa-ticket" style="font-size:20px;"></i>
+                    Boletos con el 50% de descuento en taquilla con credencial vigente.</p>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="testimonial-item mx-auto mb-5 mb-lg-0">
                             <img class="img-fluid rounded-circle mb-3" src="img/promotion.png" alt="">
                             <h5>Jueves PUMA</h5>
-                            
-                            <ul>
-                                <i>Estudiantes de la UNAM</i>
-                                <i>Maestros UNAM</i>
-                                <i>Jubilados del ISSSTE, IMSS e INAPAM</i>
-                            </ul>
-                            <p class="font-weight-light mb-0">Todas las obras de teatro a sólo $30</p>
-                            <p class="font-weight-normal mb-0"><i class="fa fa-bookmark" style="font-size:20px;"></i>
-                                
-                    Presenta tu credencial vigente en las taquillas del Centro Cultural Universitario. Aplica únicamente en días Jueves.</p>
+                            <p class="font-weight-light mb-0"><i class="fa fa-ticket" style="font-size:20px;"></i>
+                                Todas las obras de teatro a sólo $30
+                                <br><i>Aplica únicamente en días Jueves.</i>
+                            </p>
                         </div>
                     </div>
                 </div>
+                
             </div>
+            <div class="cuadro jstfy-txt">
+                    <p class="font-weight-normal mb-0">
+                    Presenta tu credencial vigente en las taquillas del Centro Cultural Universitario.
+                   El descuento aplica para: </p>
+                    <ul>
+                        <li>Estudiantes y maestros en general</li>
+                        <li>Egresados y trabajadores de la UNAM</li>
+                        <li>Jubilados del ISSSTE, IMSS e INAPAM</li>
+                    </ul>
+                </div>
         </section>
         <div class="jumbotron">
             <div class="text-center">
+                <h2 class="mb-5">¡Conoce más sobre nuestros eventos!</h2>
                 <p><a class="btn btn-primary btn-lg" href="https://comunidad.cultura.unam.mx/" role="button">¡Forma parte de la Comunidad UNAM!</a></p>
             </div>
         </div>
