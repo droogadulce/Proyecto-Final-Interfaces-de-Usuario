@@ -15,14 +15,18 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
         <!-- Custom styles for this template -->
         <link href="css/landing-page.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <link href="css/header.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+        
         <script>
+             
+            var dateToday = new Date();  
             $(function () {
                 $("#datepicker").datepicker({
-                    beforeShowDay: $.datepicker.noWeekends
+                    beforeShowDay: $.datepicker.noWeekends,
+                    minDate: dateToday
                 });
             });
 
@@ -180,13 +184,12 @@
                 </div>
                 <div class="form-group"> <!-- Fecha input -->
                     <label class="control-label" for="date">Selecciona la fecha en la que nos visitarás:</label>
-                    <input class="entrada" id="datepicker" name="date" placeholder="DD/MM/YYYY" type="text"/>
+                    <input class="entrada" id="datepicker" name="date" placeholder="DD/MM/YYYY" type="text" required />
                 </div>
                 <div class="form-group"> <!-- Fecha input -->
                     <label class="control-label" for="date">Selecciona el horario:</label>
                     <input class="entrada" type="time" name="hora" value="10:00:00" max="14:00:00" min="10:00:00" step="1">
                 </div>
-
 
                 <div class="form-group"> <!-- Submit button -->
                     <button class="btn btn-primary " name="submit" type="submit">Continuar</button>
@@ -196,5 +199,54 @@
                 <!-- Form code ends --> 
             </div>
         </form>
-        <!-- Footer -->
-        <%@ include file="footer.jsp" %>
+           
+            <!-- Footer -->
+            <footer class="footer-sp bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                            <ul class="list-inline mb-2">
+                                <li class="list-inline-item">
+                                    <a href="#">Inicio</a>
+                                </li>
+                                <li class="list-inline-item">&sdot;</li>
+                                <li class="list-inline-item">
+                                    <a href="#">Contacto</a>
+                                </li>
+                                <li class="list-inline-item">&sdot;</li>
+                                <li class="list-inline-item">
+                                    <a href="#">Términos de Uso</a>
+                                </li>
+                                <li class="list-inline-item">&sdot;</li>
+                                <li class="list-inline-item">
+                                    <a href="#">Política de Privacidad</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="https://www.facebook.com/visitasguiadas.ccuunam/">
+                                        <i class="fa fa-facebook fa-2x fa-fw"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+            <div class="square">
+                <img class="imagen" style="width: 17%;" src="http://www.difusioncultural.unam.mx/visitasguiadas/wp-content/themes/twentyten/images/escudo_firma_UNAM_culturaUNAM.png">
+                <p class="text-muted small mb-4 mb-lg-0 txt_footer">&copy;
+                    Coordinación de Difusión Cultural, Ciudad Universitaria, Av. Insurgentes Sur 3000, México D.F. Del. Coyoacán, C. P. 04510. 
+                    Todos los derechos reservados 2018. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se 
+                    mutile, se cite la fuente completa y su dirección electrónica. De otra forma requiere permiso previo por escrito de la 
+                    institución.
+                </p>
+            </div>
+
+            
+    </body>
+</html>
