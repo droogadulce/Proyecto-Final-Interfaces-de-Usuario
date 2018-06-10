@@ -88,7 +88,8 @@ public class Controlador {
             cita_bd.guardar(c);
             
             String mensaje = "Hola "+u.getNombre()
-                    +",\n\nTu cita fue hecha con exito para "+c.getFecha();
+                    +",\n\nTu solicitud para la visita guiada agendada el día "+c.getFecha() +" ha sido recibida. Espera nuestro correo de confirmación."
+                    +"\n\nSaludos cordiales,\nVisitas Guiadas del Centro Cultural Universitario";
             GoogleSmtpConnector.sendMessage(u.getCorreo(), "Visitas CCU", mensaje);
             
             return new ModelAndView("reservaciones", model);
