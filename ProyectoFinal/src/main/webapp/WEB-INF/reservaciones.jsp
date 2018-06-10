@@ -113,13 +113,13 @@
         <section>
             <form action="${pageContext.request.contextPath}/reservaciones_dia" method="get">
                 <div class="col-12 col-md-5" align="center">
-                    <button type="submit" class="btn-xlarge" value="1">VISITA GUIADA AL CENTRO CULTURAL UNIVERSITARIO</button>
+                    <button type="submit" style="margin-bottom:4px;white-space: normal;" class="btn btn-primary btn-lg btn-block" value="1">VISITA GUIADA AL CENTRO CULTURAL UNIVERSITARIO</button>
                 </div>
                 <div class="col-12 col-md-5" align="center">
-                    <button type="submit" class="btn-xlarge" value="2">DATE UN ROL Y CONOCE TU UNIVERSIDAD</button>
+                    <button type="submit" style="margin-bottom:4px;white-space: normal;" class="btn btn-primary btn-lg btn-block" value="2">DATE UN ROL Y CONOCE TU UNIVERSIDAD</button>
                 </div>
                 <div class="col-12 col-md-5" align="center">
-                    <button type="submit" class="btn-xlarge" value="3">ECONOCE TU UNIVERSIDAD</button>
+                    <button type="submit" style="margin-bottom:4px;white-space: normal;" class="btn btn-primary btn-lg btn-block" value="3">ECONOCE TU UNIVERSIDAD</button>
                 </div>
                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                     <p class="lead mb-0" align="center">¡Recuerda que también puedes hacer tu reservación al teléfono 56227008!</p>
