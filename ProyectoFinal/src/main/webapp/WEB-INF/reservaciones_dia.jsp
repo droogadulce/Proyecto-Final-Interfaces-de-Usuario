@@ -180,7 +180,7 @@
                 <!-- <form method="get">-->
                 <div class="form-group"> <!-- Cantidad personas -->
                     <label class="control-label" for="date">Selecciona el número de personas:</label>
-                    <input class="entrada" type="number" min="1" max="20" value="1">
+                    <input class="entrada" name="numPersonas" type="number" min="1" max="20" value="1">
                 </div>
                 <div class="form-group"> <!-- Fecha input -->
                     <label class="control-label" for="date">Selecciona la fecha en la que nos visitarás:</label>

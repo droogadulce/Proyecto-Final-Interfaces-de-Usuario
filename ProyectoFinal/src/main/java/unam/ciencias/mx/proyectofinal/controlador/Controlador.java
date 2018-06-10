@@ -53,6 +53,9 @@ public class Controlador {
     private UsuarioDAO usuario_bd;
      @Autowired
     private CitasDAO cita_bd;
+     
+    String idVisita = "";
+    String numPersonas = "";
     
 
      @RequestMapping(value="/", method = RequestMethod.GET)
@@ -70,6 +73,23 @@ public class Controlador {
         String sexo = request.getParameter("sexo");
         String fecha = request.getParameter("fecha_hora");
         Date startDate=new SimpleDateFormat("dd/MM/yyyy hh:mm:ss").parse(fecha);
+        
+        String visita = "";
+        switch(idVisita) {
+            case "1":
+                visita = "VISITA GUIADA AL CENTRO CULTURAL UNIVERSITARIO";
+                break;
+            case "2":
+                visita = "DATE UN ROL Y CONOCE TU UNIVERSIDAD";
+                break;
+            case "3":
+                visita = "ECONOCE TU UNIVERSIDAD";
+                break;
+            default:
+                break;
+        }
+            
+        
        
         System.out.print(fecha);
         Citas c=null;
@@ -88,7 +108,12 @@ public class Controlador {
             cita_bd.guardar(c);
             
             String mensaje = "Hola "+u.getNombre()
-                    +",\n\nTu solicitud para la visita guiada agendada el día "+c.getFecha() +" ha sido recibida. Espera nuestro correo de confirmación."
+                    +",\n\nTu solicitud para la visita guiada ha sido recibida.\n\n"
+                    + "Información de la visita:\n"
+                    +"Nombre del Recorrido: \""+ visita + "\""
+                    + "\nFecha: "+c.getFecha() 
+                    + "\nNúmero de personas: "+numPersonas
+                    +"\n\nEspera nuestro correo de confirmación."
                     +"\n\nSaludos cordiales,\nVisitas Guiadas del Centro Cultural Universitario";
             GoogleSmtpConnector.sendMessage(u.getCorreo(), "Visitas CCU", mensaje);
             
@@ -171,8 +196,17 @@ public class Controlador {
      * @return
      */
     @RequestMapping(value="/reservaciones_dia", method = RequestMethod.GET)
-    public String reservacionesDia(ModelMap model){
+    public String reservacionesDia(HttpServletRequest request, ModelMap model){
+        idVisita = request.getParameter("visita");
         return "reservaciones_dia"; 
+    }
+    
+    @RequestMapping(value = "/citas", method = RequestMethod.POST)
+    public ModelAndView guardarCita(HttpServletRequest request, ModelMap model) throws ParseException {
+        String fecha_hora = request.getParameter("date")+" "+request.getParameter("hora");
+        numPersonas = request.getParameter("numPersonas");
+        model.addAttribute("fecha_hora", fecha_hora);
+        return new ModelAndView("register", model);
     }
 
 }

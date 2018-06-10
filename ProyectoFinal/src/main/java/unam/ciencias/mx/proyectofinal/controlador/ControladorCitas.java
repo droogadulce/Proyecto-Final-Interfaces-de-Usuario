@@ -30,7 +30,7 @@ public class ControladorCitas {
     private CitasDAO cita_bd;
        
        
-         @RequestMapping(value = "/citas", method = RequestMethod.POST)
+         /*@RequestMapping(value = "/citas", method = RequestMethod.POST)
     public ModelAndView guardarUsuario(HttpServletRequest request, ModelMap model) throws ParseException {
         String fecha_hora = request.getParameter("date")+" "+request.getParameter("hora");
         
@@ -43,7 +43,7 @@ public class ControladorCitas {
             return new ModelAndView("register", model);
        // ModelMap model = new ModelMap(); 
          //model.addAttribute("correo", u.getCorreo());
-    }
+    }*/
     
     
     
